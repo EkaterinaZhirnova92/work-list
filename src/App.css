@@ -1,3 +1,12 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -34,5 +43,82 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.item {
+  background-color: rgb(236, 227, 227, 0.2);
+  width: 40%;
+  margin: auto;
+  list-style: none;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.item:hover {
+  color: rgb(63, 63, 63);
+  cursor: pointer;
+}
+.inp {
+  padding: 10px;
+  background-color: transparent;
+  width: 40%;
+  border: inset 4px ;
+  height: auto;
+  margin-bottom: 10px;
+}
+.inp:focus {
+  background-color: rgb(199, 175, 145, 0.5);
+}
+button {
+  padding: 10px;
+  text-transform: uppercase;
+  width: 30%;
+  border: none;
+}
+.green {
+  background-color: rgb(3, 107, 3, 0.5);
+}
+.red {
+  background-color: rgb(189, 5, 5, 0.5);
+}
+h1 {
+  font-size: 40px;
+  color:black;
+  text-shadow: 2px 3px 5px rgb(194, 191, 191);
+}
+.crossed {
+  text-decoration: line-through 1px red;
+  background-color: rgba(44, 43, 43, 0.2);;
+}
+
+
+@media all and (max-width: 500px) {
+  .item {
+    width: 100%;
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  button {
+    width: 80%;
+  }
+  .inp {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .item {
+    width: 60%;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  button {
+    width: 40%;
+  }
+  .inp {
+    width: 60%;
   }
 }
